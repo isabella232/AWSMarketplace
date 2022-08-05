@@ -148,7 +148,7 @@ helm install \
 ```
 
 ####
-***Deploy with https LB - need a valid domain cert, refer HTTPS.md file for more details
+**Deploy with https LB - need a valid domain cert, refer HTTPS.md file for more details
 
 ```
 helm install \
@@ -170,7 +170,7 @@ helm install \
     --set-string pelicandb.image.tag=5.7 \
     --set-string pelican.image.repo=709825985650.dkr.ecr.us-east-1.amazonaws.com/datametica/pelican-byol/pelican-web1 \
     --set-string pelican.image.tag=1.0.1 dm-pelican  charts/pelican-byol-chart/
-
+```
 Example: Deploy pelican-byol with latest images and SSL(HTTPS) enabed
 Replace the CertARN with valid string
 ```
@@ -189,6 +189,7 @@ helm install \
 As a best practice you should be replacing this CIDR value to your own networks public CIDR or subnet ranges. You can find this 
 CIDR value from your VPN gateway or consult your network admin.*
  
+
 ##
 **Step 4** : Launch Pelican console
 
